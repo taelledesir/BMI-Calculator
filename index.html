@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="Assets/Styles/style.css">
+    <!-- <script src="./Assets/Scripts/app.js" defer></script> -->
+    <script src="Assets/Scripts/app.js" defer></script>
+</head>
+
+<body>
+
+    <header class="calcHeader">
+        <h1 id="">BMI Calculator</h1>
+        <p>Body mass index (BMI) is a measure of body fat based on height and weight
+            that applies to adult men and women.</p>
+    </header>
+
+    <div class="calcInfoLeftSection">
+        <!-- This is for the input.---On the left---->
+        <div>
+            <h2>Calculate Your Body Mass Index</h2>
+            <p>Instructions:</p>
+            <ul>
+                <li>Enter your height</li>
+                <li>Enter your weight </li>
+                <li>Click on "Compute BMI"</li>
+                <li>your BMI will appear below</li>
+            </ul>
+        </div>
+
+        <div>
+            <p>Options:
+                <ul>
+                    <li><p>Metric
+                        <ul>
+                            <li>height (cm) </li>
+                            <li>enter weight in Kg</li>
+                        </ul>
+                    </p></li>
+                    <li><p>Imperial
+                        <ul>
+                            <li>Enter your height in feet & inches</li>
+                            <li>enter weight in pounds</li>
+                        </ul>
+                    </p></li>
+                </ul>
+            </p>
+        </div>
+        <section class="bmiCategories" id="">
+            <p>BMI Categories:</p>
+            <ul>
+                <li>Underweight: < 18.5 </li> 
+                <li>Normal weight: 18.5 – 24.9</li>
+                <li>Overweight: 25 – 29.9</li>
+                <li> Obesity: >= 30 </li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="computeBMISection">
+        <input type="button" value="Metric" id="calculateMetric" class="optionsBtn">
+        <input type="button" value="Imperial" id="calculateImperial" class="optionsBtn">
+
+        <div class="calculator">
+            <form action="" id="calculationForm">
+                <label for="">Height</label>
+                <input type="number" name="feet" id="heightFt" placeholder="feet" required>
+                <input type="number" name="inches" id="heightInch" placeholder="inches" required>
+                <!-- metric -->
+                <!-- <br />
+                <input type="number" name="cm" id="heightcm" placeholder="cm" > -->
+                <br />
+                <label for="">Weight</label>
+                <input type="number" name="pounds" id="pounds" placeholder="pounds" required>
+                <!-- metric -->
+                <!-- <input type="number" name="kilograms" id="kilograms" placeholder="kg" > -->
+                <br />
+                <label for="">Age</label>
+                <input type="number" name="Age" id="Age" placeholder="Age">
+                <br />
+                <!-- gender -->
+                <label for="">Gender</label>
+                <input type="button" value="Female" id="female" class="genderBtn">
+                <input type="button" value="Male" id="male" class="genderBtn">
+                <br />
+                <!-- Compute Your BMI
+            <label for="">Submit</label> -->
+                <input type="submit" value="Calculate" id="submit">
+                <input type="reset" value="Reset" id="RecalculateBMI">
+            </form>
+        </div>
+        <div class="resultSection" id="resultSection">
+            <!-- This is for the result. after compute----->
+            <p class="resultText" id="resultText"> </p>
+            <p class="BMIResultCategory" id="BMIResultCategory">Your BMI Shows that You are </p>
+        </div>
+    </div>
+
+
+    <!-- <div class="computeBMISection"> 
+        <form action="" id="calculationForm">
+            <label for="">Height</label>
+            <input type="number" name="cm"   id="heightcm"   placeholder="cm">
+            <br/>
+            <label for="">Weight</label>
+            <input type="number" name="kilograms" id="kilograms" placeholder="kg">
+            <br/>
+            
+            <input type="submit" value="submit" id="submit">
+            <input type="button" value="Recalculate BMI" id="RecalculateBMI">
+</div>  -->
+
+
+</body>
+
+</html>
