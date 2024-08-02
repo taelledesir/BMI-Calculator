@@ -64,6 +64,8 @@ resultText.textContent = `Your BMI is: ${bmiResult.toFixed(1)}`;
 }
 
 function calculateBMICategory(bmiResult) {
+  if(heightFt !=='' & pounds!=='' ){
+
   BMIResultCategoryText.style.visibility = "visible";
   var category;
   if (bmiResult < 18.5) {
@@ -79,6 +81,8 @@ function calculateBMICategory(bmiResult) {
     category = "Obese";
     BMIResultCategoryText.textContent = `Your BMI Shows that You are ${category}`;
   }
+  }
+
 }
 
 RecalculateBMI.addEventListener("click", () => {
@@ -101,13 +105,13 @@ RecalculateBMI.addEventListener("click", () => {
 
 });
 
-//metric    
 
 //swich from metric & imperial
 
 //when switch keep the color & underline under the other one that doesn't have the focus
 // & bold the one that has the focus
 
+//metric 
 //calculate in kg & cm -- Metric System
 // calculateMetric.addEventListener("click", () => {
 //   event.preventDefault();
